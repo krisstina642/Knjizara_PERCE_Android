@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/white">
+    <include layout="@layout/toolbar"/>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <LinearLayout
+                android:layout_marginLeft="30dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_width="300dp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="serif"
+                    android:gravity="left"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="serif"
+                    android:gravity="left"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/num_of_pages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="serif"
+                    android:gravity="left"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="serif"
+                    android:gravity="left"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/rating_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="serif"
+                    android:gravity="left"
+                    android:text="Ocena:"
+                    android:textSize="18dp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:clickable="false"
+                    android:contextClickable="false"
+                    android:numStars="5"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:theme="@style/RatingBar"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/image"
+                    android:layout_weight="1"
+                    android:layout_marginRight="30dp"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:id="@+id/sale" />
+            </FrameLayout>
+        </TableRow>
+
+        <TableRow android:gravity="left"
+            android:layout_margin="30dp">
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:id="@+id/description"
+                android:gravity="left"
+                android:textSize="12dp"
+                android:fontFamily="serif"/>
+        </TableRow>
+        <TableRow android:gravity="left"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Komentari:"
+                android:gravity="left"
+                android:textSize="18dp"
+                android:fontFamily="serif"/>
+        </TableRow>
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+        <com.example.knjizara.ExpandableHeightGridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="1"
+            android:id="@+id/comments"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/footer"/>
+    </LinearLayout>
+    </TableLayout>
+   </ScrollView>
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/toolbar"/>
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:divider="?android:attr/dividerHorizontal"
+                android:showDividers="none"
+                android:dividerPadding="5dp"
+                >
+                <TableRow>
+                    <TextView
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Moji Podaci"
+                        android:textSize="30dp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:fontFamily="serif"/>
+                </TableRow>
+                <TableRow android:layout_gravity="left"
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:textAlignment="viewStart">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="22dp"
+                        android:layout_gravity="left"
+                        android:id="@+id/name"
+                        android:gravity="left"
+                        android:fontFamily="serif"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="22dp"
+                        android:layout_gravity="left"
+                        android:id="@+id/surname"
+                        android:gravity="left"
+                        android:fontFamily="serif"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="22dp"
+                        android:id="@+id/ussername"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:fontFamily="serif"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/phone"
+                        android:textSize="22dp"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:fontFamily="serif"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Grad:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="22dp"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:fontFamily="serif"
+                        android:id="@+id/town"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Ulica:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="22dp"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:fontFamily="serif"
+                        android:id="@+id/street">
+                    </TextView>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="22dp"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:fontFamily="serif"
+                        android:id="@+id/street_number">
+                    </TextView>
+                </TableRow>
+                <Button
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/dark_brown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IZMENI PODATKE"
+                    android:id="@+id/button_izmeni_podatke"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif">
+                </Button>
+                <Button
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/dark_brown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PROMENI LOZINKU"
+                    android:id="@+id/promeni_lozinku"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif">
+                </Button>
+            </TableLayout>
+            <include layout="@layout/footer"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

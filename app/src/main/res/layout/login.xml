@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <include layout="@layout/toolbar"/>
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prijava"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:fontFamily="serif"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="50dp">
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Korisničko ime:"
+                android:textSize="18dp"
+                android:fontFamily="serif"/>
+        </TableRow>
+        <TableRow android:gravity="left">
+            <EditText android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:id="@+id/ussername"
+                android:gravity="center"
+                android:fontFamily="serif"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Lozinka:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="left"
+                android:textSize="18dp"
+                android:gravity="left"
+                android:fontFamily="serif"
+                />
+        </TableRow>
+        <TableRow>
+            <EditText android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password1"
+                android:inputType="textPassword"
+                android:gravity="center"
+                android:fontFamily="serif"/>
+            </TableRow>
+
+            <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uloguj se"
+                android:onClick="prijavaNaSistem"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="serif"
+                android:backgroundTint="@color/dark_brown"
+                android:textColor="@color/white"/>
+
+        <TableRow>
+            <TextView android:text="Novi korisnik?"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="serif"/>
+        </TableRow>
+
+            <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registruj se"
+                android:textColor="@color/white"
+                android:onClick="registrujse"
+                android:fontFamily="serif"
+                android:backgroundTint="@color/dark_brown"/>
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include layout="@layout/footer"/>
+    </LinearLayout>
+</LinearLayout>

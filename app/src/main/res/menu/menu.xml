@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="PROFIL"></item>
+    <item android:title="MOJE PREPORUKE"/>
+    <item android:title="ZAHTEVI ZA PRIJATELJSTVO"/>
+    <item android:title="POTRAŽI PRIJATELJA"/>
+    <item android:title="SVI PRIJATELJI"/>
+    <item android:title="ODJAVI SE"/>
+</menu> -->
+<menu
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<item
+    android:id="@+id/overflowMenu"
+    android:icon="@drawable/hamburger"
+    android:title=""
+    app:showAsAction="always">
+    <menu>
+        <item android:title="PROFIL"
+            android:id="@+id/profile"/>
+        <item android:title="MOJE PREPORUKE"
+            android:id="@+id/recomendations"/>
+        <item android:title="ZAHTEVI ZA PRIJATELJSTVO"
+            android:id="@+id/friend_requests"/>
+        <item android:title="POTRAŽI PRIJATELJA"
+            android:id="@+id/find_friend"/>
+        <item android:title="SVI PRIJATELJI"
+            android:id="@+id/all_friends"/>
+        <item
+            android:icon="@drawable/logout"
+            android:title="Logout"
+            android:id="@+id/logout"
+            />
+    </menu>
+</item>
+</menu>

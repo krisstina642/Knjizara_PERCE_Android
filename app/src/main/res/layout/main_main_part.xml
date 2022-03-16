@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <TableLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_marginBottom="20dp">
+            <RelativeLayout
+                android:layout_weight="1">
+                <com.synnapps.carouselview.CarouselView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    app:pageColor="#FFFFFFFF"
+                    app:fillColor="#FFFFFFFF"
+                    app:slideInterval="3000"
+                    app:radius="6dp"
+                    app:strokeColor="#FF777777"
+                    app:strokeWidth="1dp"
+                    android:id="@+id/carousel">
+                </com.synnapps.carouselview.CarouselView>
+            </RelativeLayout>
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/sve_knjige"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="Knjige na promociji"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"></TextView>
+        </TableRow >
+        <TableRow android:layout_width="match_parent"
+            android:layout_marginBottom="20dp">
+            <RelativeLayout
+                android:layout_weight="1">
+                <com.synnapps.carouselview.CarouselView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:adjustViewBounds="true"
+                    app:pageColor="#FFFFFFFF"
+                    app:fillColor="#FFFFFFFF"
+                    app:slideInterval="3000"
+                    app:radius="6dp"
+                    app:strokeColor="#FF777777"
+                    app:strokeWidth="1dp"
+                    android:id="@+id/carousel2">
+                </com.synnapps.carouselview.CarouselView>
+            </RelativeLayout>
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="Sve knjige"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"></TextView>
+        </TableRow>
+        <include layout="@layout/grid_2_columns"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/footer"/>
+        </LinearLayout>
+    </TableLayout>
+</ScrollView>
+</LinearLayout>

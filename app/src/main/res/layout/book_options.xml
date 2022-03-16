@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/light_brown">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="50dp">
+        <TableRow android:layout_width="match_parent">
+            <Button android:text="OCENI KNJIGU"
+                android:fontFamily="serif"
+                android:id="@+id/rate"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:backgroundTint="@color/dark_brown"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent">
+            <Button android:text="PREPORUČI PRIJATELJU"
+                android:fontFamily="serif"
+                android:id="@+id/recomend"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:backgroundTint="@color/dark_brown"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent">
+            <Button android:text="DODAJ KOMENTAR"
+                android:fontFamily="serif"
+                android:id="@+id/comment"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:backgroundTint="@color/dark_brown"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

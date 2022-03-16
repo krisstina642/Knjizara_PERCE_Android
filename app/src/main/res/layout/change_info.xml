@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_layout">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left"
+            >
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Moji podaci"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="serif"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="50dp">
+                <TableRow>
+                    <TextView android:text="Ime:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:fontFamily="serif"/>
+                </TableRow>
+                <TableRow android:gravity="left">
+                    <EditText android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:id="@+id/name"
+                        android:gravity="center"
+                        android:fontFamily="serif"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Prezime:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:fontFamily="serif"/>
+                </TableRow>
+                <TableRow android:gravity="left">
+                    <EditText android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:id="@+id/surname"
+                        android:gravity="center"
+                        android:fontFamily="serif"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Korisničko ime:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:fontFamily="serif"/>
+                </TableRow>
+                <TableRow android:gravity="left">
+                    <EditText android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:id="@+id/ussername"
+                        android:gravity="center"
+                        android:fontFamily="serif"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Telefon:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:fontFamily="serif"/>
+                </TableRow>
+                <TableRow android:gravity="left">
+                    <EditText android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:id="@+id/phone"
+                        android:gravity="center"
+                        android:fontFamily="serif"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Država:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:fontFamily="serif"/>
+                </TableRow>
+                <TableRow android:gravity="left">
+                    <EditText android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:id="@+id/town"
+                        android:gravity="center"
+                        android:fontFamily="serif"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Ulica:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:fontFamily="serif">
+                    </TextView>
+                </TableRow>
+                <TableRow android:gravity="left">
+                    <EditText android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:id="@+id/street"
+                        android:gravity="center"
+                        android:fontFamily="serif">
+                    </EditText>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Kućni broj:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:fontFamily="serif">
+                    </TextView>
+                </TableRow>
+                <TableRow android:gravity="left">
+                    <EditText android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:id="@+id/street_number"
+                        android:gravity="center"
+                        android:fontFamily="serif">
+                    </EditText>
+                </TableRow>
+                <Button
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/dark_brown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Potvrdi"
+                    android:id="@+id/potvrdi"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif">
+                </Button>
+            </TableLayout>
+            <include layout="@layout/footer"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
